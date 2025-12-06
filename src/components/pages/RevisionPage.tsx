@@ -47,39 +47,80 @@ export function RevisionPage() {
         <div className="space-y-4">
           <div className="bg-white border border-slate-200 rounded-lg p-6">
             <h4 className="text-slate-900 mb-3">Object-Oriented Programming</h4>
-            <p className="text-slate-500 italic text-sm">
-              [Add OOP practice questions here]
-            </p>
+            <div className="text-slate-600 text-sm space-y-2">
+              <ul className="list-disc pl-5 space-y-2">
+                <li><strong>Constructors:</strong> Explain the difference between a default constructor and a parameterized constructor in Java. Write a code snippet showing how to use the <code>this</code> keyword to differentiate between class fields and parameters.</li>
+                <li><strong>Abstract vs. Interface:</strong> You are building a "Shape" system. Create an Interface named <code>IDrawable</code> with a method <code>draw()</code>, and an Abstract Class named <code>Shape</code> with a concrete method <code>calculateArea()</code>. Explain why you chose this structure.</li>
+                <li><strong>Polymorphism:</strong> Define Method Overriding. Write a C# program where a subclass <code>Dog</code> overrides a method <code>speak()</code> from its superclass <code>Animal</code>.</li>
+              </ul>
+            </div>
           </div>
 
           <div className="bg-white border border-slate-200 rounded-lg p-6">
             <h4 className="text-slate-900 mb-3">Control Structures</h4>
-            <p className="text-slate-500 italic text-sm">
-              [Add control structures practice questions here]
-            </p>
+            <div className="text-slate-600 text-sm space-y-2">
+              <ul className="list-disc pl-5 space-y-2">
+                <li><strong>Number Logic (Strong Number):</strong> Write a C# program to check if a number is a "Strong Number". A number is Strong if the sum of the factorial of its digits is equal to the number itself (e.g., 145 = 1! + 4! + 5!).</li>
+                <li><strong>Switch Statements:</strong> Write a snippet to simulate a simple ATM menu using a <code>switch</code> statement (1. Check Balance, 2. Withdraw, 3. Exit). Ensure you handle invalid inputs (default case).</li>
+                <li><strong>Loop Tracing:</strong> Given the loop <code>for(int i=1; i&lt;10; i+=2)</code>, what is the exact output? How would the output change if the increment was <code>i++</code>?</li>
+              </ul>
+            </div>
           </div>
 
           <div className="bg-white border border-slate-200 rounded-lg p-6">
             <h4 className="text-slate-900 mb-3">Recursion</h4>
-            <p className="text-slate-500 italic text-sm">
-              [Add recursion practice questions here]
-            </p>
+            <div className="text-slate-600 text-sm space-y-2">
+              <ul className="list-disc pl-5 space-y-2">
+                <li><strong>Sum of Natural Numbers:</strong> Write a recursive Java method <code>sum(int n)</code> that returns the sum of all numbers from 1 to n. (e.g., sum(5) = 1+2+3+4+5).</li>
+                <li><strong>Power Calculation:</strong> Write a recursive function to calculate <code>base^exponent</code> (e.g., 2^3 = 8) without using <code>Math.pow</code> or loops.</li>
+                <li><strong>Analysis:</strong> Explain why a "Base Case" is strictly necessary in recursion to avoid a StackOverflowError.</li>
+              </ul>
+            </div>
           </div>
 
           <div className="bg-white border border-slate-200 rounded-lg p-6">
             <h4 className="text-slate-900 mb-3">Strings and Arrays</h4>
-            <p className="text-slate-500 italic text-sm">
-              [Add strings and arrays practice questions here]
-            </p>
+            <div className="text-slate-600 text-sm space-y-2">
+              <ul className="list-disc pl-5 space-y-2">
+                <li><strong>String Manipulation:</strong> Write a C# method <code>countConsonants(String str)</code> that returns the count of all non-vowel letters. Ignore spaces and special characters.</li>
+                <li><strong>Array Reversal:</strong> Write a Java method that accepts an integer array and reverses the elements in-place (without creating a second array).</li>
+                <li><strong>Unique Characters:</strong> Write a logic snippet to check if a String contains only unique characters (e.g., "World" = true, "Hello" = false).</li>
+              </ul>
+            </div>
           </div>
         </div>
       </ContentSection>
 
       <ContentSection title="Quick Revision Guide">
         <div className="bg-slate-50 border border-slate-200 rounded-lg p-6">
-          <p className="text-slate-500 italic text-sm">
-            [Add quick revision guide content here - key concepts, formulas, common patterns]
-          </p>
+          <div className="text-slate-600 text-sm space-y-4">
+            <div>
+              <h5 className="font-semibold text-slate-800">1. Types of Errors</h5>
+              <ul className="list-disc pl-5">
+                <li><strong>Syntax Error:</strong> Code violates language rules (e.g., missing semicolon). Caught by compiler.</li>
+                <li><strong>Runtime Error:</strong> Happens during execution (e.g., Divide by Zero, Array Index Out of Bounds).</li>
+                <li><strong>Logical Error:</strong> Program runs but gives wrong output (e.g., using + instead of *).</li>
+              </ul>
+            </div>
+            <hr className="border-slate-200" />
+            <div>
+              <h5 className="font-semibold text-slate-800">2. Key Definitions</h5>
+              <ul className="list-disc pl-5">
+                <li><strong>Syntax:</strong> The structure/grammar of the code.</li>
+                <li><strong>Semantics:</strong> The meaning/logic behind the code.</li>
+                <li><strong>IDE:</strong> Integrated Development Environment (tools to code, debug, and run).</li>
+              </ul>
+            </div>
+            <hr className="border-slate-200" />
+            <div>
+              <h5 className="font-semibold text-slate-800">3. OOP Concepts Cheat Sheet</h5>
+              <ul className="list-disc pl-5">
+                <li><strong>Encapsulation:</strong> Hiding data (private variables) and exposing via methods (getters/setters).</li>
+                <li><strong>Inheritance:</strong> Reusing code from a parent class (<code>extends</code> in Java, <code>:</code> in C#).</li>
+                <li><strong>Polymorphism:</strong> One interface, many forms (Overloading vs. Overriding).</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </ContentSection>
 
